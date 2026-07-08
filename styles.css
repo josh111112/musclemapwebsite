@@ -35,6 +35,9 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header h1 {
@@ -43,8 +46,24 @@ body {
     background: linear-gradient(to right, #f43f5e, #fb923c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-align: center;
     letter-spacing: -0.5px;
+}
+
+.header-link {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.5rem;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    transition: all 0.2s ease;
+}
+
+.header-link:hover {
+    color: var(--accent);
+    border-color: var(--accent);
 }
 
 .app-store-container {
@@ -60,13 +79,16 @@ body {
 .thesis-group {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
     text-align: center;
+    min-height: 50vh;
+    justify-content: center;
 }
 
 .thesis-section {
-    font-size: 2.25rem;
-    font-weight: 600;
+    font-size: clamp(3.5rem, 12vw, 5rem);
+    font-weight: 800;
+    line-height: 1.1;
 }
 
 .thesis-description-section {
