@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
@@ -78,6 +83,16 @@ h6 {
 .nav-links a {
     text-decoration: none;
     color: #333;
+}
+
+.nav-links a:not(.btn-primary) {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .nav-links a:not(.btn-primary) {
+        display: inline;
+    }
 }
 
 .btn-primary {
@@ -281,11 +296,21 @@ h6 {
 
 /* Animation directions */
 .marquee-row.scroll-left .marquee-track {
-    animation: scroll-left 90s linear infinite;
+    animation: scroll-left 40s linear infinite;
 }
 
 .marquee-row.scroll-right .marquee-track {
-    animation: scroll-right 90s linear infinite;
+    animation: scroll-right 40s linear infinite;
+}
+
+@media (min-width: 768px) {
+    .marquee-row.scroll-left .marquee-track {
+        animation-duration: 90s;
+    }
+    
+    .marquee-row.scroll-right .marquee-track {
+        animation-duration: 90s;
+    }
 }
 
 /* Pause scroll on hover for readability */
