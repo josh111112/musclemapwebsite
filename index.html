@@ -4,74 +4,340 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>MuscleMapFitness</title>
-    <meta name="description" content="Your ultimate fitness companion for tracking and optimizing muscle workouts.">
+    <title>MuscleMap | Intelligent 3D Workout Tracker</title>
+    <meta name="description"
+        content="Optimize your lifts and prevent injury with MuscleMap. The intelligent workout tracker featuring an interactive 3D muscle map, ACWR analytics, and auto-progression.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://musclemapfitness.com/">
+    <meta property="og:title" content="MuscleMap | Intelligent 3D Workout Tracker">
+    <meta property="og:description"
+        content="Optimize your lifts and prevent injury with MuscleMap. The intelligent workout tracker featuring an interactive 3D muscle map, ACWR analytics, and auto-progression.">
+    <meta property="og:image" content="https://musclemapfitness.com/assets/og-image.jpeg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://musclemapfitness.com/">
+    <meta property="twitter:title" content="MuscleMap | Intelligent 3D Workout Tracker">
+    <meta property="twitter:description"
+        content="Optimize your lifts and prevent injury with MuscleMap. The intelligent workout tracker featuring an interactive 3D muscle map, ACWR analytics, and auto-progression.">
+    <meta property="twitter:image" content="https://musclemapfitness.com/assets/og-image.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Structured Data (JSON-LD) for App SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "MuscleMap Fitness",
+      "operatingSystem": "iOS",
+      "applicationCategory": "HealthAndFitnessApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
 </head>
 
 <body>
-    <header class="header">
-        <h1>MuscleMapFitness</h1>
-        <a href="https://apps.apple.com/app/id6782176731" class="header-link">App Store</a>
-    </header>
-    <main class="app-store-container">
-        <div class="thesis-group">
-            <section class="thesis-section">
-                <p>Stop guessing, Start growing</p>
-            </section>
-            <section class="thesis-description-section">
-                <p>thesis description</p>
-            </section>
+    <!-- 1. Nav Bar -->
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <a href="#" class="brand-logo">MuscleMapFitness</a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#support">Support</a>
+                <a href="https://apps.apple.com/app/id6782176731" class="btn-primary">App Store</a>
+            </div>
         </div>
-        <div class="store-links">
-            <a href="https://apps.apple.com/app/id6782176731" class="store-button apple-store">
-                <!-- SVG Icon for Apple App Store -->
-                <svg viewBox="0 0 384 512" width="24" height="24" fill="currentColor">
-                    <path
-                        d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z" />
-                </svg>
-                <div class="store-text">
-                    <span class="download-text">Download on the</span>
-                    <span class="store-name">App Store</span>
-                </div>
-            </a>
-        </div>
-    </main>
+    </nav>
 
-    <section class="features-section">
-        <div class="feature-card">
-            <div class="video-placeholder">
-                <span>Video Demo Placeholder</span>
-            </div>
-            <div class="feature-content">
-                <h2>Feature One</h2>
-                <p>Description of the first key feature goes here.</p>
-            </div>
-        </div>
-        <div class="feature-card">
-            <div class="video-placeholder">
-                <span>Video Demo Placeholder</span>
-            </div>
-            <div class="feature-content">
-                <h2>Feature Two</h2>
-                <p>Description of the second key feature goes here.</p>
+    <!-- 2. Hero Section -->
+    <section class="hero-section">
+        <div class="container hero-content">
+            <h1 class="hero-title">
+                <span>Stop guessing.</span>
+                <span>Start growing.</span>
+                <span class="sr-only"> Intelligent 3D Workout Tracker App</span>
+            </h1>
+            <p class="hero-subtitle">The most intelligent workout tracking experience. Optimize your lifts and prevent
+                injury.</p>
+            <div class="hero-buttons">
+                <a href="https://apps.apple.com/app/id6782176731" class="btn-store">Download on App Store</a>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="footer-links">
-            <div class="footer-resources-group">
-                <span class="resources-label">Resources</span>
-                <a href="#" class="footer-link">Contact Us</a>
+    <!-- 3. Features Split Sections -->
+    <section id="features" class="features-wrapper">
+
+        <!-- Feature 1: MuscleMap3D -->
+        <div class="split-section">
+            <div class="split-text">
+                <h2>Interactive 3D Muscle Map</h2>
+                <p>Visualize your fatigue in real-time. Our interactive 3D model updates dynamically to show which
+                    muscles are recovered and which need rest.</p>
             </div>
-            <div class="footer-download-group">
-                <span class="download-label">Download</span>
-                <a href="https://apps.apple.com/app/id6782176731" class="footer-link">App Store</a>
+            <div class="split-media">
+                <video src="assets/MuscleMapFitnessVideoMainDemo.mp4" loop muted playsinline preload="none"
+                    class="feature-video"></video>
             </div>
         </div>
-        <span class="footer-copyright">&copy; 2026 MuscleMapFitness</span>
+
+        <!-- Feature 2: Analytics & ACWR (Reversed) -->
+        <div class="split-section reversed">
+            <div class="split-text">
+                <h2>Advanced Analytics & Injury Prevention</h2>
+                <p>Track your Acute-to-Chronic Workload Ratio (ACWR) and 1RM to optimize your training progression while
+                    minimizing the risk of overtraining.</p>
+            </div>
+            <div class="split-media">
+                <video src="assets/ChartsDemoVideo.mp4" loop muted playsinline preload="none"
+                    class="feature-video"></video>
+            </div>
+        </div>
+
+        <!-- Feature 3: Progressive Overload -->
+        <div class="split-section">
+            <div class="split-text">
+                <h2>Automatic Progressive Overload</h2>
+                <p>Take the guesswork out of progression. Toggle between Double Progression and Standard prefill
+                    algorithms, set custom rep ceilings, and let the app calculate your next load increments
+                    automatically.</p>
+            </div>
+            <div class="split-media">
+                <video src="assets/ProgressiveOverloadDemoVideo.mp4" loop muted playsinline preload="none"
+                    class="feature-video"></video>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- 4. Extra Features Section -->
+    <section class="marquee-section">
+        <div class="container">
+            <h2 class="section-title">All the features you could want</h2>
+        </div>
+
+        <div class="marquee-container">
+            <!-- Row 1: Scroll Left -->
+            <div class="marquee-row scroll-left">
+                <div class="marquee-track">
+                    <div class="marquee-item">Seamless Cloud Sync</div>
+                    <div class="marquee-item">Live Activities Timer</div>
+                    <div class="marquee-item">1-10 RPE Tracking</div>
+                    <div class="marquee-item">1RM Progress Charts</div>
+                    <div class="marquee-item">Interactive 3D Model</div>
+                    <div class="marquee-item">Workout Templates</div>
+                    <div class="marquee-item">Quick Log Shortcuts</div>
+                    <div class="marquee-item">Double Progression Logic</div>
+                    <div class="marquee-item">Detailed Set History</div>
+                    <div class="marquee-item">Body Measurement Charts</div>
+                    <div class="marquee-item">Offline Queue Sync</div>
+                </div>
+                <div class="marquee-track">
+                    <div class="marquee-item">Seamless Cloud Sync</div>
+                    <div class="marquee-item">Live Activities Timer</div>
+                    <div class="marquee-item">1-10 RPE Tracking</div>
+                    <div class="marquee-item">1RM Progress Charts</div>
+                    <div class="marquee-item">Interactive 3D Model</div>
+                    <div class="marquee-item">Workout Templates</div>
+                    <div class="marquee-item">Quick Log Shortcuts</div>
+                    <div class="marquee-item">Double Progression Logic</div>
+                    <div class="marquee-item">Detailed Set History</div>
+                    <div class="marquee-item">Body Measurement Charts</div>
+                    <div class="marquee-item">Offline Queue Sync</div>
+                </div>
+            </div>
+
+            <!-- Row 2: Scroll Right -->
+            <div class="marquee-row scroll-right">
+                <div class="marquee-track">
+                    <div class="marquee-item">ACWR Injury Risk</div>
+                    <div class="marquee-item">Grid History Calendar</div>
+                    <div class="marquee-item">Strong CSV Importer</div>
+                    <div class="marquee-item">Custom Recovery Splits</div>
+                    <div class="marquee-item">Draggable Dashboard Widgets</div>
+                    <div class="marquee-item">Dynamic Fatigue Colors</div>
+                    <div class="marquee-item">Quick Start Workout</div>
+                    <div class="marquee-item">Muscle Recovery Timelines</div>
+                    <div class="marquee-item">Weekly Consistency Chart</div>
+                    <div class="marquee-item">Fatigue Sensitivity Tuning</div>
+                    <div class="marquee-item">Deep Layer Selection</div>
+                </div>
+                <div class="marquee-track">
+                    <div class="marquee-item">ACWR Injury Risk</div>
+                    <div class="marquee-item">Grid History Calendar</div>
+                    <div class="marquee-item">Strong CSV Importer</div>
+                    <div class="marquee-item">Custom Recovery Splits</div>
+                    <div class="marquee-item">Draggable Dashboard Widgets</div>
+                    <div class="marquee-item">Dynamic Fatigue Colors</div>
+                    <div class="marquee-item">Quick Start Workout</div>
+                    <div class="marquee-item">Muscle Recovery Timelines</div>
+                    <div class="marquee-item">Weekly Consistency Chart</div>
+                    <div class="marquee-item">Fatigue Sensitivity Tuning</div>
+                    <div class="marquee-item">Deep Layer Selection</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Social Proof Banner
+    <section class="banner-section">
+        <div class="container">
+            <h2>Strength in Numbers</h2>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <h3>App Store</h3>
+                    <p>★★★★★</p>
+                    <p>4.9 star average</p>
+                </div>
+                <div class="metric-card">
+                    <h3>Users</h3>
+                    <p>Thousands of users</p>
+                    <p>Millions of lifts logged</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <!-- 5. Cross-Platform Section
+    <section class="cross-platform-section">
+        <div class="container">
+            <h2>Your Training. Any Device.</h2>
+            <p>Access your training from iPhone, Android, and Apple Watch.</p>
+            <div class="media-placeholder wide">Devices Image Placeholder</div>
+        </div>
+    </section>
+    -->
+
+    <!-- 6. Testimonials Grid -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2>MuscleMap is for everyone</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p>"I used to track my lifts in a spreadsheet, but MuscleMap's automatic progressive overload
+                        completely changed my training. It tells me exactly what weight to hit next. The smartest
+                        workout tracker I've ever used."</p>
+                    <span>- Baruch</span>
+                </div>
+                <div class="testimonial-card">
+                    <p>"The interactive 3D muscle map is a game changer. I used to guess which muscle groups were
+                        recovered, but now I can visually see exactly what I need to hit next. The ultimate workout
+                        planner for serious lifters."</p>
+                    <span>- Ben</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Final CTA Section -->
+    <section class="final-cta-section">
+        <div class="container">
+            <h2>Everything you need. Nothing you don't.</h2>
+            <p>Smart logging, 3D maps, body tracking, and more.</p>
+            <div class="hero-buttons">
+                <a href="https://apps.apple.com/app/id6782176731" class="btn-store">Try MuscleMap for Free</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How do I track progressive overload?</h3>
+                    <p>MuscleMap automatically calculates your progressive overload. Simply choose between our Double
+                        Progression or Standard algorithms, and the app will intelligently suggest your next weight
+                        increments based on your performance history.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Is this the best app for tracking muscle recovery?</h3>
+                    <p>Yes. Our interactive 3D muscle map visually displays your fatigue levels in real-time. You can
+                        customize recovery timelines for each specific muscle group, ensuring you never overtrain or
+                        risk injury.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I import my workout history?</h3>
+                    <p>Absolutely. MuscleMap includes a seamless CSV importer that allows you to bring over all your
+                        past workout history from other apps like Strong in seconds, so you never lose your progress.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do I need an internet connection to log workouts?</h3>
+                    <p>No. MuscleMap features robust offline queue syncing. You can log all your sets, reps, and RPEs
+                        entirely offline at the gym, and your data will securely back up to the cloud the moment you
+                        reconnect.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Multi-Column Footer -->
+    <footer id="support" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col brand-col">
+                <h3>MuscleMapFitness</h3>
+            </div>
+            <div class="footer-col">
+                <h4>About</h4>
+                <a href="#features">Features</a>
+                <!-- <a href="#">Pro</a> -->
+            </div>
+            <!-- <div class="footer-col">
+                <h4>Resources</h4>
+                 <a href="#">Help Center</a> 
+            </div> -->
+            <div class="footer-col">
+                <h4>Download</h4>
+                <a href="https://apps.apple.com/app/id6782176731">App Store</a>
+            </div>
+        </div>
+        <div class="container" style="text-align: left; margin-bottom: 20px;">
+            <p style="color: #666; font-size: 0.95rem;">contact us at admin@musclemapfitness.com</p>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 MuscleMapFitness</p>
+        </div>
     </footer>
+
+    <!-- Intersection Observer for Lazy Loading Videos -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const videos = document.querySelectorAll('video.feature-video');
+            if ('IntersectionObserver' in window) {
+                const videoObserver = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.play();
+                        } else {
+                            entry.target.pause();
+                        }
+                    });
+                }, { threshold: 0.1 });
+
+                videos.forEach(video => {
+                    videoObserver.observe(video);
+                });
+            } else {
+                videos.forEach(video => {
+                    video.play();
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
