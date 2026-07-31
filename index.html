@@ -87,7 +87,7 @@
                     muscles are recovered and which need rest.</p>
             </div>
             <div class="split-media">
-                <video src="assets/MuscleMapFitnessVideoMainDemo.mp4" loop muted playsinline preload="none"
+                <video src="assets/MuscleMapFitnessVideoMainDemo.mp4" loop muted playsinline preload="metadata"
                     class="feature-video"></video>
             </div>
         </div>
@@ -100,7 +100,7 @@
                     minimizing the risk of overtraining.</p>
             </div>
             <div class="split-media">
-                <video src="assets/ChartsDemoVideo.mp4" loop muted playsinline preload="none"
+                <video src="assets/ChartsDemoVideo.mp4" loop muted playsinline preload="metadata"
                     class="feature-video"></video>
             </div>
         </div>
@@ -114,7 +114,7 @@
                     automatically.</p>
             </div>
             <div class="split-media">
-                <video src="assets/ProgressiveOverloadDemoVideo.mp4" loop muted playsinline preload="none"
+                <video src="assets/ProgressiveOverloadDemoVideo.mp4" loop muted playsinline preload="metadata"
                     class="feature-video"></video>
             </div>
         </div>
@@ -315,11 +315,23 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const videos = document.querySelectorAll('video.feature-video');
+
+            const handlePlay = (video) => {
+                const playPromise = video.play();
+                if (playPromise !== undefined) {
+                    playPromise.catch(error => {
+                        console.log("Autoplay was prevented (likely Low Power Mode).", error);
+                        // Automatically add controls so the user can manually play it if autoplay fails
+                        video.setAttribute("controls", "controls");
+                    });
+                }
+            };
+
             if ('IntersectionObserver' in window) {
                 const videoObserver = new IntersectionObserver((entries, observer) => {
                     entries.forEach(entry => {
                         if (entry.isIntersecting) {
-                            entry.target.play();
+                            handlePlay(entry.target);
                         } else {
                             entry.target.pause();
                         }
@@ -331,7 +343,7 @@
                 });
             } else {
                 videos.forEach(video => {
-                    video.play();
+                    handlePlay(video);
                 });
             }
         });
