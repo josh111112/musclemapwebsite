@@ -53,6 +53,7 @@
         <div class="nav-container">
             <a href="#" class="brand-logo">MuscleMapFitness</a>
             <div class="nav-links">
+                <a href="#muscles">Muscles</a>
                 <a href="#features">Features</a>
                 <a href="#support">Support</a>
                 <a href="https://apps.apple.com/app/id6782176731" class="btn-primary">App Store</a>
@@ -119,6 +120,453 @@
             </div>
         </div>
 
+    </section>
+
+    <!-- 3.5. Muscles Directory Section (Mobile-First) -->
+    <section id="muscles" class="muscles-section">
+        <div class="container">
+            <div class="muscles-header">
+                <h2 class="muscles-title">Explore All 31 Muscles</h2>
+                <p class="muscles-subtitle">MuscleMap tracks recovery, volume, and fatigue for every individual muscle group. Select any muscle below to view anatomy and guidance.</p>
+            </div>
+
+            <!-- Search & Filter Controls -->
+            <div class="muscles-controls">
+                <div class="muscles-search-wrapper">
+                    <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="text" id="muscleSearchInput" class="muscles-search-input" placeholder="Search any muscle (e.g. Pecs, Biceps, Quads)..." autocomplete="off" aria-label="Search muscles">
+                    <button type="button" id="clearSearchBtn" class="clear-search-btn" aria-label="Clear search" style="display: none;">&times;</button>
+                </div>
+
+                <!-- Category Filter Pills -->
+                <div class="muscles-filter-pills" role="tablist" aria-label="Filter by muscle group">
+                    <button type="button" class="filter-pill active" data-filter="all" role="tab" aria-selected="true">All (31)</button>
+                    <button type="button" class="filter-pill" data-filter="chest" role="tab" aria-selected="false">Chest</button>
+                    <button type="button" class="filter-pill" data-filter="back" role="tab" aria-selected="false">Back</button>
+                    <button type="button" class="filter-pill" data-filter="shoulders" role="tab" aria-selected="false">Shoulders</button>
+                    <button type="button" class="filter-pill" data-filter="arms" role="tab" aria-selected="false">Arms</button>
+                    <button type="button" class="filter-pill" data-filter="legs" role="tab" aria-selected="false">Legs</button>
+                    <button type="button" class="filter-pill" data-filter="core" role="tab" aria-selected="false">Core</button>
+                    <button type="button" class="filter-pill" data-filter="neck" role="tab" aria-selected="false">Neck</button>
+                </div>
+            </div>
+
+            <!-- Muscle Grid -->
+            <div class="muscles-grid" id="musclesGrid">
+            <a href="/muscles/Pecs.html" class="muscle-item-card" data-group="chest" data-name="pecs pectoralis major">
+                <div class="muscle-item-top">
+                    <span class="muscle-item-badge badge-chest">Chest</span>
+                    <span class="muscle-item-arrow" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </div>
+                <h3 class="muscle-item-title">Pecs</h3>
+                <p class="muscle-item-sub">Pectoralis Major</p>
+            </a>
+            <a href="/muscles/Upper_Pecs.html" class="muscle-item-card" data-group="chest" data-name="upper pecs clavicular head">
+                <div class="muscle-item-top">
+                    <span class="muscle-item-badge badge-chest">Chest</span>
+                    <span class="muscle-item-arrow" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </div>
+                <h3 class="muscle-item-title">Upper Pecs</h3>
+                <p class="muscle-item-sub">Clavicular Head</p>
+            </a>
+            <a href="/muscles/Serratus.html" class="muscle-item-card" data-group="chest" data-name="serratus serratus anterior">
+                <div class="muscle-item-top">
+                    <span class="muscle-item-badge badge-chest">Chest</span>
+                    <span class="muscle-item-arrow" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </div>
+                <h3 class="muscle-item-title">Serratus</h3>
+                <p class="muscle-item-sub">Serratus Anterior</p>
+            </a>
+            <a href="/muscles/Lats.html" class="muscle-item-card" data-group="back" data-name="lats latissimus dorsi">
+                <div class="muscle-item-top">
+                    <span class="muscle-item-badge badge-back">Back</span>
+                    <span class="muscle-item-arrow" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </div>
+                <h3 class="muscle-item-title">Lats</h3>
+                <p class="muscle-item-sub">Latissimus Dorsi</p>
+            </a>
+            <a href="/muscles/Upper_Traps.html" class="muscle-item-card" data-group="back" data-name="upper traps upper trapezius">
+                <div class="muscle-item-top">
+                    <span class="muscle-item-badge badge-back">Back</span>
+                    <span class="muscle-item-arrow" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </div>
+                <h3 class="muscle-item-title">Upper Traps</h3>
+                <p class="muscle-item-sub">Upper Trapezius</p>
+            </a>
+            <a href="/muscles/Middle_Traps.html" class="muscle-item-card" data-group="back" data-name="middle traps middle trapezius">
+                <div class="muscle-item-top">
+                    <span class="muscle-item-badge badge-back">Back</span>
+                    <span class="muscle-item-arrow" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </div>
+                <h3 class="muscle-item-title">Middle Traps</h3>
+                <p class="muscle-item-sub">Middle Trapezius</p>
+            </a>
+            <a href="/muscles/Lower_Traps.html" class="muscle-item-card" data-group="back" data-name="lower traps lower trapezius">
+                <div class="muscle-item-top">
+                    <span class="muscle-item-badge badge-back">Back</span>
+                    <span class="muscle-item-arrow" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </div>
+                <h3 class="muscle-item-title">Lower Traps</h3>
+                <p class="muscle-item-sub">Lower Trapezius</p>
+            </a>
+            <a href="/muscles/Rhomboids.html" class="muscle-item-card" data-group="back" data-name="rhomboids rhomboid major & minor">
+                <div class="muscle-item-top">
+                    <span class="muscle-item-badge badge-back">Back</span>
+                    <span class="muscle-item-arrow" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </div>
+                <h3 class="muscle-item-title">Rhomboids</h3>
+                <p class="muscle-item-sub">Rhomboid Major & Minor</p>
+            </a>
+            <a href="/muscles/Spinae_Erector.html" class="muscle-item-card" data-group="back" data-name="spinae erector erector spinae">
+                <div class="muscle-item-top">
+                    <span class="muscle-item-badge badge-back">Back</span>
+                    <span class="muscle-item-arrow" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </div>
+                <h3 class="muscle-item-title">Spinae Erector</h3>
+                <p class="muscle-item-sub">Erector Spinae</p>
+            </a>
+            <a href="/muscles/Teres.html" class="muscle-item-card" data-group="back" data-name="teres teres major & minor">
+                <div class="muscle-item-top">
+                    <span class="muscle-item-badge badge-back">Back</span>
+                    <span class="muscle-item-arrow" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </div>
+                <h3 class="muscle-item-title">Teres</h3>
+                <p class="muscle-item-sub">Teres Major & Minor</p>
+            </a>
+            <a href="/muscles/Front_Delts.html" class="muscle-item-card" data-group="shoulders" data-name="front delts anterior deltoids">
+                <div class="muscle-item-top">
+                    <span class="muscle-item-badge badge-shoulders">Shoulders</span>
+                    <span class="muscle-item-arrow" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </div>
+                <h3 class="muscle-item-title">Front Delts</h3>
+                <p class="muscle-item-sub">Anterior Deltoids</p>
+            </a>
+            <a href="/muscles/Side_Delts.html" class="muscle-item-card" data-group="shoulders" data-name="side delts lateral deltoids">
+                <div class="muscle-item-top">
+                    <span class="muscle-item-badge badge-shoulders">Shoulders</span>
+                    <span class="muscle-item-arrow" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </div>
+                <h3 class="muscle-item-title">Side Delts</h3>
+                <p class="muscle-item-sub">Lateral Deltoids</p>
+            </a>
+            <a href="/muscles/Rear_Delts.html" class="muscle-item-card" data-group="shoulders" data-name="rear delts posterior deltoids">
+                <div class="muscle-item-top">
+                    <span class="muscle-item-badge badge-shoulders">Shoulders</span>
+                    <span class="muscle-item-arrow" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </div>
+                <h3 class="muscle-item-title">Rear Delts</h3>
+                <p class="muscle-item-sub">Posterior Deltoids</p>
+            </a>
+            <a href="/muscles/Rotator_Cuff.html" class="muscle-item-card" data-group="shoulders" data-name="rotator cuff infraspinatus & supraspinatus">
+                <div class="muscle-item-top">
+                    <span class="muscle-item-badge badge-shoulders">Shoulders</span>
+                    <span class="muscle-item-arrow" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </div>
+                <h3 class="muscle-item-title">Rotator Cuff</h3>
+                <p class="muscle-item-sub">Infraspinatus & Supraspinatus</p>
+            </a>
+            <a href="/muscles/Biceps.html" class="muscle-item-card" data-group="arms" data-name="biceps biceps brachii">
+                <div class="muscle-item-top">
+                    <span class="muscle-item-badge badge-arms">Arms</span>
+                    <span class="muscle-item-arrow" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </div>
+                <h3 class="muscle-item-title">Biceps</h3>
+                <p class="muscle-item-sub">Biceps Brachii</p>
+            </a>
+            <a href="/muscles/Triceps.html" class="muscle-item-card" data-group="arms" data-name="triceps triceps brachii">
+                <div class="muscle-item-top">
+                    <span class="muscle-item-badge badge-arms">Arms</span>
+                    <span class="muscle-item-arrow" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </div>
+                <h3 class="muscle-item-title">Triceps</h3>
+                <p class="muscle-item-sub">Triceps Brachii</p>
+            </a>
+            <a href="/muscles/Forearm_Flexors.html" class="muscle-item-card" data-group="arms" data-name="forearm flexors wrist & finger flexors">
+                <div class="muscle-item-top">
+                    <span class="muscle-item-badge badge-arms">Arms</span>
+                    <span class="muscle-item-arrow" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </div>
+                <h3 class="muscle-item-title">Forearm Flexors</h3>
+                <p class="muscle-item-sub">Wrist & Finger Flexors</p>
+            </a>
+            <a href="/muscles/Forearm_Extensors.html" class="muscle-item-card" data-group="arms" data-name="forearm extensors wrist & finger extensors">
+                <div class="muscle-item-top">
+                    <span class="muscle-item-badge badge-arms">Arms</span>
+                    <span class="muscle-item-arrow" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </div>
+                <h3 class="muscle-item-title">Forearm Extensors</h3>
+                <p class="muscle-item-sub">Wrist & Finger Extensors</p>
+            </a>
+            <a href="/muscles/Quads.html" class="muscle-item-card" data-group="legs" data-name="quads quadriceps femoris">
+                <div class="muscle-item-top">
+                    <span class="muscle-item-badge badge-legs">Legs</span>
+                    <span class="muscle-item-arrow" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </div>
+                <h3 class="muscle-item-title">Quads</h3>
+                <p class="muscle-item-sub">Quadriceps Femoris</p>
+            </a>
+            <a href="/muscles/Hamstrings.html" class="muscle-item-card" data-group="legs" data-name="hamstrings biceps femoris & semis">
+                <div class="muscle-item-top">
+                    <span class="muscle-item-badge badge-legs">Legs</span>
+                    <span class="muscle-item-arrow" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </div>
+                <h3 class="muscle-item-title">Hamstrings</h3>
+                <p class="muscle-item-sub">Biceps Femoris & Semis</p>
+            </a>
+            <a href="/muscles/Glutes.html" class="muscle-item-card" data-group="legs" data-name="glutes gluteus complex">
+                <div class="muscle-item-top">
+                    <span class="muscle-item-badge badge-legs">Legs</span>
+                    <span class="muscle-item-arrow" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </div>
+                <h3 class="muscle-item-title">Glutes</h3>
+                <p class="muscle-item-sub">Gluteus Complex</p>
+            </a>
+            <a href="/muscles/Hip_Flexors.html" class="muscle-item-card" data-group="legs" data-name="hip flexors psoas & iliacus">
+                <div class="muscle-item-top">
+                    <span class="muscle-item-badge badge-legs">Legs</span>
+                    <span class="muscle-item-arrow" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </div>
+                <h3 class="muscle-item-title">Hip Flexors</h3>
+                <p class="muscle-item-sub">Psoas & Iliacus</p>
+            </a>
+            <a href="/muscles/Abductors.html" class="muscle-item-card" data-group="legs" data-name="abductors hip abductors (tfl / medius)">
+                <div class="muscle-item-top">
+                    <span class="muscle-item-badge badge-legs">Legs</span>
+                    <span class="muscle-item-arrow" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </div>
+                <h3 class="muscle-item-title">Abductors</h3>
+                <p class="muscle-item-sub">Hip Abductors (TFL / Medius)</p>
+            </a>
+            <a href="/muscles/Adductors.html" class="muscle-item-card" data-group="legs" data-name="adductors hip adductors">
+                <div class="muscle-item-top">
+                    <span class="muscle-item-badge badge-legs">Legs</span>
+                    <span class="muscle-item-arrow" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </div>
+                <h3 class="muscle-item-title">Adductors</h3>
+                <p class="muscle-item-sub">Hip Adductors</p>
+            </a>
+            <a href="/muscles/Upper_Calves.html" class="muscle-item-card" data-group="legs" data-name="upper calves gastrocnemius">
+                <div class="muscle-item-top">
+                    <span class="muscle-item-badge badge-legs">Legs</span>
+                    <span class="muscle-item-arrow" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </div>
+                <h3 class="muscle-item-title">Upper Calves</h3>
+                <p class="muscle-item-sub">Gastrocnemius</p>
+            </a>
+            <a href="/muscles/Lower_Calves.html" class="muscle-item-card" data-group="legs" data-name="lower calves soleus">
+                <div class="muscle-item-top">
+                    <span class="muscle-item-badge badge-legs">Legs</span>
+                    <span class="muscle-item-arrow" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </div>
+                <h3 class="muscle-item-title">Lower Calves</h3>
+                <p class="muscle-item-sub">Soleus</p>
+            </a>
+            <a href="/muscles/Dorsi_Flexors.html" class="muscle-item-card" data-group="legs" data-name="dorsi flexors tibialis anterior">
+                <div class="muscle-item-top">
+                    <span class="muscle-item-badge badge-legs">Legs</span>
+                    <span class="muscle-item-arrow" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </div>
+                <h3 class="muscle-item-title">Dorsi Flexors</h3>
+                <p class="muscle-item-sub">Tibialis Anterior</p>
+            </a>
+            <a href="/muscles/Abs.html" class="muscle-item-card" data-group="core" data-name="abs rectus abdominis">
+                <div class="muscle-item-top">
+                    <span class="muscle-item-badge badge-core">Core</span>
+                    <span class="muscle-item-arrow" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </div>
+                <h3 class="muscle-item-title">Abs</h3>
+                <p class="muscle-item-sub">Rectus Abdominis</p>
+            </a>
+            <a href="/muscles/Obliques.html" class="muscle-item-card" data-group="core" data-name="obliques internal & external obliques">
+                <div class="muscle-item-top">
+                    <span class="muscle-item-badge badge-core">Core</span>
+                    <span class="muscle-item-arrow" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </div>
+                <h3 class="muscle-item-title">Obliques</h3>
+                <p class="muscle-item-sub">Internal & External Obliques</p>
+            </a>
+            <a href="/muscles/Front_Neck.html" class="muscle-item-card" data-group="neck" data-name="front neck sternocleidomastoid">
+                <div class="muscle-item-top">
+                    <span class="muscle-item-badge badge-neck">Neck</span>
+                    <span class="muscle-item-arrow" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </div>
+                <h3 class="muscle-item-title">Front Neck</h3>
+                <p class="muscle-item-sub">Sternocleidomastoid</p>
+            </a>
+            <a href="/muscles/Rear_Neck.html" class="muscle-item-card" data-group="neck" data-name="rear neck splenius capitis">
+                <div class="muscle-item-top">
+                    <span class="muscle-item-badge badge-neck">Neck</span>
+                    <span class="muscle-item-arrow" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </div>
+                <h3 class="muscle-item-title">Rear Neck</h3>
+                <p class="muscle-item-sub">Splenius Capitis</p>
+            </a>
+            </div>
+
+            <!-- No Results Found State -->
+            <div class="muscles-empty-state" id="musclesEmptyState" style="display: none;">
+                <p>No muscles found matching "<span id="emptyQueryText"></span>"</p>
+                <button type="button" class="btn-reset-filter" id="resetFilterBtn">Show All Muscles</button>
+            </div>
+        </div>
     </section>
 
     <!-- 4. Extra Features Section -->
@@ -347,6 +795,84 @@
                 });
             }
         });
+
+        // Interactive Muscles Directory Filtering & Live Search
+        (function () {
+            const searchInput = document.getElementById('muscleSearchInput');
+            const clearBtn = document.getElementById('clearSearchBtn');
+            const filterPills = document.querySelectorAll('.filter-pill');
+            const cards = document.querySelectorAll('.muscle-item-card');
+            const emptyState = document.getElementById('musclesEmptyState');
+            const emptyQueryText = document.getElementById('emptyQueryText');
+            const resetBtn = document.getElementById('resetFilterBtn');
+
+            if (!searchInput || !cards.length) return;
+
+            let currentCategory = 'all';
+
+            function filterMuscles() {
+                const query = searchInput.value.trim().toLowerCase();
+                let visibleCount = 0;
+
+                clearBtn.style.display = query.length > 0 ? 'flex' : 'none';
+
+                cards.forEach(card => {
+                    const cardGroup = card.getAttribute('data-group');
+                    const cardName = card.getAttribute('data-name');
+
+                    const matchesCategory = (currentCategory === 'all') || (cardGroup === currentCategory);
+                    const matchesSearch = !query || cardName.includes(query);
+
+                    if (matchesCategory && matchesSearch) {
+                        card.style.display = 'flex';
+                        visibleCount++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+
+                if (visibleCount === 0) {
+                    emptyState.style.display = 'block';
+                    emptyQueryText.textContent = query || (currentCategory !== 'all' ? currentCategory : '');
+                } else {
+                    emptyState.style.display = 'none';
+                }
+            }
+
+            searchInput.addEventListener('input', filterMuscles);
+
+            clearBtn.addEventListener('click', function () {
+                searchInput.value = '';
+                searchInput.focus();
+                filterMuscles();
+            });
+
+            filterPills.forEach(pill => {
+                pill.addEventListener('click', function () {
+                    filterPills.forEach(p => {
+                        p.classList.remove('active');
+                        p.setAttribute('aria-selected', 'false');
+                    });
+                    this.classList.add('active');
+                    this.setAttribute('aria-selected', 'true');
+                    currentCategory = this.getAttribute('data-filter');
+                    filterMuscles();
+                });
+            });
+
+            if (resetBtn) {
+                resetBtn.addEventListener('click', function () {
+                    searchInput.value = '';
+                    currentCategory = 'all';
+                    filterPills.forEach(p => {
+                        const isAll = p.getAttribute('data-filter') === 'all';
+                        p.classList.toggle('active', isAll);
+                        p.setAttribute('aria-selected', isAll ? 'true' : 'false');
+                    });
+                    filterMuscles();
+                });
+            }
+        })();
     </script>
 </body>
 
