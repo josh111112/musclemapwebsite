@@ -546,3 +546,149 @@ h6 {
     text-align: center;
     color: #777;
 }
+
+/* ==========================================================================
+   10. Muscle Detail Page Styles (Mobile-First)
+   ========================================================================== */
+
+.muscle-page-header {
+    background: linear-gradient(135deg, #0e1118 0%, #171b26 100%);
+    color: #fff;
+    padding: 48px 20px 36px;
+    text-align: center;
+    position: relative;
+    border-bottom: 1px solid #232a38;
+}
+
+.muscle-category-badge {
+    display: inline-block;
+    background: rgba(56, 189, 248, 0.12);
+    color: #38bdf8;
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    padding: 5px 14px;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+}
+
+.muscle-title {
+    font-size: clamp(2.2rem, 7vw, 3.2rem);
+    color: #ffffff;
+    margin-bottom: 8px;
+    line-height: 1.15;
+    letter-spacing: 0.5px;
+}
+
+.muscle-subtitle {
+    font-size: clamp(1rem, 3.2vw, 1.15rem);
+    color: #94a3b8;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.muscle-content-section {
+    padding: 32px 16px 60px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.muscle-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 28px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.muscle-card h2 {
+    font-size: clamp(1.3rem, 4vw, 1.5rem);
+    margin-bottom: 12px;
+    color: #0f172a;
+}
+
+.muscle-card p {
+    color: #475569;
+    font-size: 1.05rem;
+    line-height: 1.65;
+}
+
+.muscle-empty-placeholder {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #f8fafc;
+    border: 1px dashed #cbd5e1;
+    border-radius: 10px;
+    padding: 16px;
+    margin-top: 14px;
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+.muscle-empty-placeholder svg {
+    flex-shrink: 0;
+    color: #94a3b8;
+}
+
+.muscle-app-callout {
+    background: linear-gradient(135deg, #090d16 0%, #151d2f 100%);
+    color: #ffffff;
+    border-radius: 16px;
+    padding: 32px 20px;
+    text-align: center;
+    margin-top: 28px;
+    border: 1px solid #1e293b;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.muscle-app-callout h3 {
+    font-size: clamp(1.4rem, 4.5vw, 1.8rem);
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.muscle-app-callout p {
+    color: #cbd5e1;
+    font-size: 1rem;
+    max-width: 480px;
+    margin: 0 auto 24px;
+    line-height: 1.6;
+}
+
+.muscle-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+@media (min-width: 480px) {
+    .muscle-actions {
+        flex-direction: row;
+    }
+}
+
+.btn-secondary {
+    display: inline-block;
+    background: transparent;
+    color: #475569;
+    border: 1px solid #cbd5e1;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+    background: #f1f5f9;
+    color: #0f172a;
+    border-color: #94a3b8;
+}

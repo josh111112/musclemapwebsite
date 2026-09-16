@@ -1,0 +1,34 @@
+# Cloudflare Pages Redirects & Rewrites
+# Maps root URLs to the muscles/ directory with 200 rewrite so both paths work seamlessly
+
+/Abs              /muscles/Abs.html              200
+/Front_Neck       /muscles/Front_Neck.html       200
+/Lats             /muscles/Lats.html             200
+/Lower_Traps      /muscles/Lower_Traps.html      200
+/Pecs             /muscles/Pecs.html             200
+/Middle_Traps     /muscles/Middle_Traps.html     200
+/Obliques         /muscles/Obliques.html         200
+/Rear_Neck        /muscles/Rear_Neck.html        200
+/Rhomboids        /muscles/Rhomboids.html        200
+/Serratus         /muscles/Serratus.html         200
+/Spinae_Erector   /muscles/Spinae_Erector.html   200
+/Upper_Pecs       /muscles/Upper_Pecs.html       200
+/Upper_Traps      /muscles/Upper_Traps.html      200
+/Biceps           /muscles/Biceps.html           200
+/Front_Delts      /muscles/Front_Delts.html      200
+/Rear_Delts       /muscles/Rear_Delts.html       200
+/Triceps          /muscles/Triceps.html          200
+/Rotator_Cuff     /muscles/Rotator_Cuff.html     200
+/Side_Delts       /muscles/Side_Delts.html       200
+/Teres            /muscles/Teres.html            200
+/Forearm_Flexors  /muscles/Forearm_Flexors.html  200
+/Forearm_Extensors /muscles/Forearm_Extensors.html 200
+/Abductors        /muscles/Abductors.html        200
+/Adductors        /muscles/Adductors.html        200
+/Glutes           /muscles/Glutes.html           200
+/Hamstrings       /muscles/Hamstrings.html       200
+/Hip_Flexors      /muscles/Hip_Flexors.html      200
+/Quads            /muscles/Quads.html            200
+/Upper_Calves     /muscles/Upper_Calves.html     200
+/Lower_Calves     /muscles/Lower_Calves.html     200
+/Dorsi_Flexors    /muscles/Dorsi_Flexors.html    200
