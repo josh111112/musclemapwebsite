@@ -693,6 +693,75 @@ h6 {
     border-color: #94a3b8;
 }
 
+/* Related Muscles Card & Chips (Detail Pages) */
+.related-muscles-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 24px 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.related-muscles-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: clamp(1.2rem, 3.8vw, 1.45rem);
+    color: #0f172a;
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+
+.related-muscles-sub {
+    color: #64748b;
+    font-size: 0.92rem;
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.related-muscles-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.related-muscle-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    color: #0f172a;
+    padding: 10px 16px;
+    border-radius: 9999px;
+    text-decoration: none;
+    font-size: 0.92rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.related-muscle-chip svg {
+    color: #94a3b8;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.related-muscle-chip:hover {
+    background: #0f172a;
+    color: #ffffff;
+    border-color: #0f172a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+}
+
+.related-muscle-chip:hover svg {
+    color: #38bdf8;
+    transform: translateX(2px);
+}
+
+.related-muscle-chip:active {
+    transform: scale(0.97);
+}
+
 /* ==========================================================================
    11. Homepage Muscles Directory Section (Mobile-First)
    ========================================================================== */
