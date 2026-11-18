@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dorsi Flexors Guide | MuscleMap Fitness</title>
     <meta name="description"
         content="Learn about Dorsi Flexors anatomy, function, targeted exercises, and recovery tracking with the MuscleMap 3D workout tracker.">
@@ -47,14 +47,27 @@
 
 <body>
     <!-- 1. Nav Bar -->
-    <nav class="nav-bar">
+    <nav class="nav-bar" aria-label="Primary">
         <div class="nav-container">
             <a href="/" class="brand-logo">MuscleMapFitness</a>
-            <div class="nav-links">
-                <a href="/#muscles">Muscles</a>
-                <a href="/#features">Features</a>
-                <a href="/#support">Support</a>
+            <div class="nav-actions">
+                <div id="nav-menu" class="nav-links">
+                    <a href="/#muscles">Muscles</a>
+                    <a href="/#features">Features</a>
+                    <a href="/#support">Support</a>
+                </div>
                 <a href="https://apps.apple.com/app/id6782176731" class="btn-primary">App Store</a>
+                <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation menu">
+                    <svg class="nav-icon-menu" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <svg class="nav-icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
             </div>
         </div>
     </nav>
@@ -62,9 +75,11 @@
     <!-- 2. Muscle Page Header -->
     <header class="muscle-page-header">
         <div class="container">
-            <span class="muscle-category-badge">Legs</span>
             <h1 class="muscle-title">Dorsi Flexors</h1>
-            <p class="muscle-subtitle">Tibialis Anterior</p>
+            <div class="muscle-meta-row">
+                <p class="muscle-subtitle">Tibialis Anterior</p>
+                <span class="muscle-category-badge">Legs</span>
+            </div>
         </div>
     </header>
 
@@ -73,16 +88,41 @@
         <!-- Overview & Anatomy Card -->
         <article class="muscle-card">
             <h2>Overview &amp; Anatomy</h2>
-            <p>Detailed anatomical breakdown and primary biomechanical functions for the <strong>Dorsi Flexors</strong> are being compiled.</p>
-            <div class="muscle-empty-placeholder">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <line x1="12" y1="8" x2="12" y2="12"></line>
-                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
-                </svg>
-                <span>Muscle anatomy and functional guide coming soon.</span>
-            </div>
-            <!-- Add muscle overview and anatomical description here -->
+            <p class="muscle-overview-lead">The tibialis anterior runs down the front outer shin beside the tibia, controlling how your foot meets the ground on every step, sprint, and jump landing.</p>
+
+            <dl class="muscle-anatomy-specs">
+                <div class="muscle-spec-row">
+                    <dt>Primary Function</dt>
+                    <dd>Dorsiflexes the ankle (lifting the toes toward the shin), inverts the foot, and decelerates foot slap after heel strike.</dd>
+                </div>
+                <div class="muscle-spec-row">
+                    <dt>Origin &amp; Insertion</dt>
+                    <dd>Originates on the lateral condyle and upper two-thirds of the lateral tibia; inserts onto the medial cuneiform and base of the first metatarsal.</dd>
+                </div>
+            </dl>
+
+            <section class="muscle-guide-section">
+                <h3>Top Targeted Exercises</h3>
+                <ul class="muscle-exercise-list">
+                    <li class="muscle-exercise-item">
+                        <strong class="muscle-exercise-name">Standing Wall Tibialis Raise</strong>
+                        <p class="muscle-exercise-cue">Lean your upper back against a wall with heels 12–18 inches out, keep knees straight, and pull your toes up toward your shins.</p>
+                    </li>
+                    <li class="muscle-exercise-item">
+                        <strong class="muscle-exercise-name">Tib Bar Raise</strong>
+                        <p class="muscle-exercise-cue">Sit with calves supported on a bench, hook your feet into a loaded tib bar, and dorsiflex through a full pain-free range.</p>
+                    </li>
+                    <li class="muscle-exercise-item">
+                        <strong class="muscle-exercise-name">Banded Ankle Dorsiflexion</strong>
+                        <p class="muscle-exercise-cue">Anchor a resistance band behind a rack, loop it across your forefoot, and draw your toes back against steady tension.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="muscle-guide-section">
+                <h3>Recovery &amp; ACWR Tracking</h3>
+                <p>Often overlooked in strength programs, the tibialis anterior fatigues quickly when running mileage or plyometric volume jumps. Logging shin work in MuscleMap visualizes lower-leg fatigue on the 3D map and uses ACWR to pace progression before shin splints develop.</p>
+            </section>
         </article>
 
         <!-- Related Muscles Section -->
@@ -134,13 +174,62 @@
                 <a href="https://apps.apple.com/app/id6782176731">App Store</a>
             </div>
         </div>
-        <div class="container" style="text-align: left; margin-bottom: 20px;">
-            <p style="color: #666; font-size: 0.95rem;">contact us at admin@musclemapfitness.com</p>
+        <div class="container footer-contact">
+            <p>Contact us at <a href="mailto:admin@musclemapfitness.com">admin@musclemapfitness.com</a></p>
         </div>
         <div class="container footer-bottom">
             <p>&copy; 2026 MuscleMapFitness</p>
         </div>
     </footer>
+    <script id="mobile-nav-script">
+        (function () {
+            const navBar = document.querySelector('.nav-bar');
+            const toggle = document.querySelector('.nav-toggle');
+            const menu = document.getElementById('nav-menu');
+            if (!navBar || !toggle || !menu) return;
+
+            function setMenuOpen(isOpen, restoreFocus) {
+                navBar.classList.toggle('is-open', isOpen);
+                toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+                toggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+                if (!isOpen && restoreFocus) {
+                    toggle.focus();
+                }
+            }
+
+            toggle.addEventListener('click', function () {
+                const isOpen = !navBar.classList.contains('is-open');
+                setMenuOpen(isOpen, false);
+            });
+
+            menu.querySelectorAll('a').forEach(function (link) {
+                link.addEventListener('click', function () {
+                    setMenuOpen(false, false);
+                });
+            });
+
+            document.addEventListener('click', function (event) {
+                if (navBar.classList.contains('is-open') && !navBar.contains(event.target)) {
+                    setMenuOpen(false, false);
+                }
+            });
+
+            document.addEventListener('keydown', function (event) {
+                if (event.key === 'Escape' && navBar.classList.contains('is-open')) {
+                    setMenuOpen(false, true);
+                }
+            });
+
+            const desktopQuery = window.matchMedia('(min-width: 768px)');
+            if (desktopQuery.addEventListener) {
+                desktopQuery.addEventListener('change', function (e) {
+                    if (e.matches && navBar.classList.contains('is-open')) {
+                        setMenuOpen(false, false);
+                    }
+                });
+            }
+        })();
+    </script>
 </body>
 
 </html>

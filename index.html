@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MuscleMap | Intelligent 3D Workout Tracker</title>
     <meta name="description"
         content="Optimize your lifts and prevent injury with MuscleMap. The intelligent workout tracker featuring an interactive 3D muscle map, ACWR analytics, and auto-progression.">
@@ -50,14 +50,27 @@
 
 <body>
     <!-- 1. Nav Bar -->
-    <nav class="nav-bar">
+    <nav class="nav-bar" aria-label="Primary">
         <div class="nav-container">
             <a href="#" class="brand-logo">MuscleMapFitness</a>
-            <div class="nav-links">
-                <a href="#muscles">Muscles</a>
-                <a href="#features">Features</a>
-                <a href="#support">Support</a>
+            <div class="nav-actions">
+                <div id="nav-menu" class="nav-links">
+                    <a href="#muscles">Muscles</a>
+                    <a href="#features">Features</a>
+                    <a href="#support">Support</a>
+                </div>
                 <a href="https://apps.apple.com/app/id6782176731" class="btn-primary">App Store</a>
+                <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation menu">
+                    <svg class="nav-icon-menu" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <svg class="nav-icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
             </div>
         </div>
     </nav>
@@ -65,15 +78,24 @@
     <!-- 2. Hero Section -->
     <section class="hero-section">
         <div class="container hero-content">
-            <h1 class="hero-title">
-                <span>Stop guessing.</span>
-                <span>Start growing.</span>
-                <span class="sr-only"> Intelligent 3D Workout Tracker App</span>
-            </h1>
-            <p class="hero-subtitle">The most intelligent workout tracking experience. Optimize your lifts and prevent
-                injury.</p>
-            <div class="hero-buttons">
-                <a href="https://apps.apple.com/app/id6782176731" class="btn-store">Download on App Store</a>
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span>Stop guessing.</span>
+                    <span>Start growing.</span>
+                </h1>
+                <p class="hero-subtitle">The intelligent 3D workout tracker. Visualize muscle recovery, track ACWR, and
+                    prevent injury.</p>
+                <div class="hero-buttons">
+                    <a href="https://apps.apple.com/app/id6782176731" class="btn-store">Download on App Store</a>
+                </div>
+            </div>
+            <div class="hero-media">
+                <div class="hero-device-frame">
+                    <video src="assets/MuscleMapFitnessVideoMainDemo.mp4" poster="assets/poster-main-demo.jpg"
+                        width="660" height="1434" autoplay loop muted playsinline preload="metadata"
+                        aria-label="MuscleMap interactive 3D anatomical muscle recovery tracker preview"
+                        class="hero-demo-video"></video>
+                </div>
             </div>
         </div>
     </section>
@@ -89,7 +111,9 @@
                     muscles are recovered and which need rest.</p>
             </div>
             <div class="split-media">
-                <video src="assets/MuscleMapFitnessVideoMainDemo.mp4" loop muted playsinline preload="metadata"
+                <video src="assets/MuscleMapFitnessVideoMainDemo.mp4" poster="assets/poster-main-demo.jpg"
+                    width="660" height="1434" loop muted playsinline preload="metadata"
+                    aria-label="Interactive 3D Muscle Map demo showing real-time muscle recovery and fatigue"
                     class="feature-video"></video>
             </div>
         </div>
@@ -98,11 +122,12 @@
         <div class="split-section reversed">
             <div class="split-text">
                 <h2>Advanced Analytics & Injury Prevention</h2>
-                <p>Track your Acute-to-Chronic Workload Ratio (ACWR) and 1RM to optimize your training progression while
-                    minimizing the risk of overtraining.</p>
+                <p>Track your Acute-to-Chronic Workload Ratio (ACWR — comparing recent training load to your longer-term baseline) and estimated 1-Rep Max (1RM) so you can push harder without overtraining.</p>
             </div>
             <div class="split-media">
-                <video src="assets/ChartsDemoVideo.mp4" loop muted playsinline preload="metadata"
+                <video src="assets/ChartsDemoVideo.mp4" poster="assets/poster-charts-demo.jpg"
+                    width="660" height="1434" loop muted playsinline preload="metadata"
+                    aria-label="MuscleMap ACWR and workout consistency analytics charts demo"
                     class="feature-video"></video>
             </div>
         </div>
@@ -111,12 +136,12 @@
         <div class="split-section">
             <div class="split-text">
                 <h2>Automatic Progressive Overload</h2>
-                <p>Take the guesswork out of progression. Toggle between Double Progression and Standard prefill
-                    algorithms, set custom rep ceilings, and let the app calculate your next load increments
-                    automatically.</p>
+                <p>Take the guesswork out of progression. Choose Double Progression (increasing weight once you hit your top rep target) or Standard prefill, set custom rep ceilings, and let the app calculate your next load increments automatically.</p>
             </div>
             <div class="split-media">
-                <video src="assets/ProgressiveOverloadDemoVideo.mp4" loop muted playsinline preload="metadata"
+                <video src="assets/ProgressiveOverloadDemoVideo.mp4" poster="assets/poster-overload-demo.jpg"
+                    width="660" height="1434" loop muted playsinline preload="metadata"
+                    aria-label="MuscleMap automatic progressive overload settings and load increment demo"
                     class="feature-video"></video>
             </div>
         </div>
@@ -139,21 +164,25 @@
                         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                     </svg>
                     <input type="text" id="muscleSearchInput" class="muscles-search-input" placeholder="Search any muscle (e.g. Pecs, Biceps, Quads)..." autocomplete="off" aria-label="Search muscles">
-                    <button type="button" id="clearSearchBtn" class="clear-search-btn" aria-label="Clear search" style="display: none;">&times;</button>
+                    <button type="button" id="clearSearchBtn" class="clear-search-btn" aria-label="Clear search" style="display: none;"><span class="clear-search-icon" aria-hidden="true">&times;</span></button>
                 </div>
 
                 <!-- Category Filter Pills -->
-                <div class="muscles-filter-pills" role="tablist" aria-label="Filter by muscle group">
-                    <button type="button" class="filter-pill active" data-filter="all" role="tab" aria-selected="true">All (31)</button>
-                    <button type="button" class="filter-pill" data-filter="chest" role="tab" aria-selected="false">Chest</button>
-                    <button type="button" class="filter-pill" data-filter="back" role="tab" aria-selected="false">Back</button>
-                    <button type="button" class="filter-pill" data-filter="shoulders" role="tab" aria-selected="false">Shoulders</button>
-                    <button type="button" class="filter-pill" data-filter="arms" role="tab" aria-selected="false">Arms</button>
-                    <button type="button" class="filter-pill" data-filter="legs" role="tab" aria-selected="false">Legs</button>
-                    <button type="button" class="filter-pill" data-filter="core" role="tab" aria-selected="false">Core</button>
-                    <button type="button" class="filter-pill" data-filter="neck" role="tab" aria-selected="false">Neck</button>
+                <div class="muscles-filter-wrap" id="musclesFilterWrap">
+                    <div class="muscles-filter-pills" id="musclesFilterPills" role="tablist" aria-label="Filter by muscle group">
+                        <button type="button" class="filter-pill active" data-filter="all" role="tab" aria-selected="true">All (31)</button>
+                        <button type="button" class="filter-pill" data-filter="chest" role="tab" aria-selected="false">Chest</button>
+                        <button type="button" class="filter-pill" data-filter="back" role="tab" aria-selected="false">Back</button>
+                        <button type="button" class="filter-pill" data-filter="shoulders" role="tab" aria-selected="false">Shoulders</button>
+                        <button type="button" class="filter-pill" data-filter="arms" role="tab" aria-selected="false">Arms</button>
+                        <button type="button" class="filter-pill" data-filter="legs" role="tab" aria-selected="false">Legs</button>
+                        <button type="button" class="filter-pill" data-filter="core" role="tab" aria-selected="false">Core</button>
+                        <button type="button" class="filter-pill" data-filter="neck" role="tab" aria-selected="false">Neck</button>
+                    </div>
                 </div>
             </div>
+
+            <div class="muscles-results-meta" id="musclesResultCount" aria-live="polite">Showing all 31 muscles</div>
 
             <!-- Muscle Grid -->
             <div class="muscles-grid" id="musclesGrid">
@@ -564,110 +593,62 @@
 
             <!-- No Results Found State -->
             <div class="muscles-empty-state" id="musclesEmptyState" style="display: none;">
-                <p>No muscles found matching "<span id="emptyQueryText"></span>"</p>
-                <button type="button" class="btn-reset-filter" id="resetFilterBtn">Show All Muscles</button>
+                <p id="emptyStateMessage">No muscles found matching "<span id="emptyQueryText"></span>"</p>
+                <div class="muscles-empty-actions">
+                    <button type="button" class="btn-search-all" id="searchAllBtn" style="display: none;">Search All 31 Muscles</button>
+                    <button type="button" class="btn-reset-filter" id="resetFilterBtn">Clear Search &amp; Show All</button>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- 4. Extra Features Section -->
-    <section class="marquee-section">
+    <!-- 4. Capabilities Summary Section -->
+    <section class="capabilities-section">
         <div class="container">
-            <h2 class="section-title">All the features you could want</h2>
-        </div>
-
-        <div class="marquee-container">
-            <!-- Row 1: Scroll Left -->
-            <div class="marquee-row scroll-left">
-                <div class="marquee-track">
-                    <div class="marquee-item">Seamless Cloud Sync</div>
-                    <div class="marquee-item">Live Activities Timer</div>
-                    <div class="marquee-item">1-10 RPE Tracking</div>
-                    <div class="marquee-item">1RM Progress Charts</div>
-                    <div class="marquee-item">Interactive 3D Model</div>
-                    <div class="marquee-item">Workout Templates</div>
-                    <div class="marquee-item">Quick Log Shortcuts</div>
-                    <div class="marquee-item">Double Progression Logic</div>
-                    <div class="marquee-item">Detailed Set History</div>
-                    <div class="marquee-item">Body Measurement Charts</div>
-                    <div class="marquee-item">Offline Queue Sync</div>
-                </div>
-                <div class="marquee-track">
-                    <div class="marquee-item">Seamless Cloud Sync</div>
-                    <div class="marquee-item">Live Activities Timer</div>
-                    <div class="marquee-item">1-10 RPE Tracking</div>
-                    <div class="marquee-item">1RM Progress Charts</div>
-                    <div class="marquee-item">Interactive 3D Model</div>
-                    <div class="marquee-item">Workout Templates</div>
-                    <div class="marquee-item">Quick Log Shortcuts</div>
-                    <div class="marquee-item">Double Progression Logic</div>
-                    <div class="marquee-item">Detailed Set History</div>
-                    <div class="marquee-item">Body Measurement Charts</div>
-                    <div class="marquee-item">Offline Queue Sync</div>
-                </div>
+            <div class="capabilities-header">
+                <h2 class="section-title">Built for Focused Training</h2>
+                <p class="capabilities-subtitle">Every tool you need to map recovery, log sets fast, and progress safely—without clutter.</p>
             </div>
 
-            <!-- Row 2: Scroll Right -->
-            <div class="marquee-row scroll-right">
-                <div class="marquee-track">
-                    <div class="marquee-item">ACWR Injury Risk</div>
-                    <div class="marquee-item">Grid History Calendar</div>
-                    <div class="marquee-item">Strong CSV Importer</div>
-                    <div class="marquee-item">Custom Recovery Splits</div>
-                    <div class="marquee-item">Draggable Dashboard Widgets</div>
-                    <div class="marquee-item">Dynamic Fatigue Colors</div>
-                    <div class="marquee-item">Quick Start Workout</div>
-                    <div class="marquee-item">Muscle Recovery Timelines</div>
-                    <div class="marquee-item">Weekly Consistency Chart</div>
-                    <div class="marquee-item">Fatigue Sensitivity Tuning</div>
-                    <div class="marquee-item">Deep Layer Selection</div>
+            <div class="capabilities-grid">
+                <div class="capability-group">
+                    <h3>3D Body &amp; Recovery</h3>
+                    <ul class="capability-list">
+                        <li>Interactive 3D anatomical model with deep layer selection</li>
+                        <li>Dynamic fatigue colors and per-muscle recovery timelines</li>
+                        <li>Fatigue sensitivity tuning and custom recovery splits</li>
+                    </ul>
                 </div>
-                <div class="marquee-track">
-                    <div class="marquee-item">ACWR Injury Risk</div>
-                    <div class="marquee-item">Grid History Calendar</div>
-                    <div class="marquee-item">Strong CSV Importer</div>
-                    <div class="marquee-item">Custom Recovery Splits</div>
-                    <div class="marquee-item">Draggable Dashboard Widgets</div>
-                    <div class="marquee-item">Dynamic Fatigue Colors</div>
-                    <div class="marquee-item">Quick Start Workout</div>
-                    <div class="marquee-item">Muscle Recovery Timelines</div>
-                    <div class="marquee-item">Weekly Consistency Chart</div>
-                    <div class="marquee-item">Fatigue Sensitivity Tuning</div>
-                    <div class="marquee-item">Deep Layer Selection</div>
+
+                <div class="capability-group">
+                    <h3>Progression &amp; Logging</h3>
+                    <ul class="capability-list">
+                        <li>Double Progression and Standard prefill logic</li>
+                        <li>1–10 RPE effort tracking and detailed set history</li>
+                        <li>Live Activities rest timer, templates, and quick-start shortcuts</li>
+                    </ul>
+                </div>
+
+                <div class="capability-group">
+                    <h3>Analytics &amp; Consistency</h3>
+                    <ul class="capability-list">
+                        <li>ACWR injury risk monitoring and 1RM progress charts</li>
+                        <li>Weekly consistency chart and grid history calendar</li>
+                        <li>Body measurement tracking over time</li>
+                    </ul>
+                </div>
+
+                <div class="capability-group">
+                    <h3>Sync &amp; Migration</h3>
+                    <ul class="capability-list">
+                        <li>Offline workout queue with automatic cloud sync</li>
+                        <li>Strong CSV importer to bring over past workouts</li>
+                        <li>Customizable, draggable dashboard widgets</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- 4. Social Proof Banner
-    <section class="banner-section">
-        <div class="container">
-            <h2>Strength in Numbers</h2>
-            <div class="metrics-grid">
-                <div class="metric-card">
-                    <h3>App Store</h3>
-                    <p>★★★★★</p>
-                    <p>4.9 star average</p>
-                </div>
-                <div class="metric-card">
-                    <h3>Users</h3>
-                    <p>Thousands of users</p>
-                    <p>Millions of lifts logged</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    -->
-
-    <!-- 5. Cross-Platform Section
-    <section class="cross-platform-section">
-        <div class="container">
-            <h2>Your Training. Any Device.</h2>
-            <p>Access your training from iPhone, Android, and Apple Watch.</p>
-            <div class="media-placeholder wide">Devices Image Placeholder</div>
-        </div>
-    </section>
-    -->
 
     <!-- 6. Testimonials Grid -->
     <section class="testimonials-section">
@@ -707,26 +688,28 @@
             <h2 class="section-title">Frequently Asked Questions</h2>
             <div class="faq-grid">
                 <div class="faq-item">
-                    <h3>How do I track progressive overload?</h3>
-                    <p>MuscleMap automatically calculates your progressive overload. Set your target rep ceiling and preferred weight increment, then simply choose between our Double Progression or Standard algorithms. The app will intelligently suggest your next weight increments based on your performance history.</p>
+                    <h3>Is MuscleMap Fitness free, and which devices are supported?</h3>
+                    <p>MuscleMap Fitness is free to download on iOS via the Apple App Store.</p>
                 </div>
                 <div class="faq-item">
-                    <h3>Is this the best app for tracking muscle recovery?</h3>
-                    <p>Yes. Our interactive 3D muscle map visually displays your fatigue levels in real-time. You can
-                        customize recovery timelines for each specific muscle group, ensuring you never overtrain or
-                        risk injury.</p>
+                    <h3>How do I track progressive overload?</h3>
+                    <p>Set your target rep ceiling and preferred weight increment, then choose Double Progression (automatically raising weight after you hit your top rep target) or Standard prefill. MuscleMap calculates your next target load from your logged sets.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What is ACWR and how does it help prevent injury?</h3>
+                    <p>ACWR (Acute-to-Chronic Workload Ratio) compares your recent training workload against your longer-term baseline, helping you spot sudden volume spikes before they lead to overtraining.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How does MuscleMap track muscle recovery?</h3>
+                    <p>Our interactive 3D muscle map updates fatigue colors in real time based on your logged exercises, and lets you customize recovery timelines and sensitivity for each muscle group.</p>
                 </div>
                 <div class="faq-item">
                     <h3>Can I import my workout history?</h3>
-                    <p>Absolutely. MuscleMap includes a seamless CSV importer that allows you to bring over all your
-                        past workout history from other apps like Strong in seconds, so you never lose your progress.
-                    </p>
+                    <p>Yes. MuscleMap includes a CSV importer so you can bring over your past workout history from apps like Strong in seconds.</p>
                 </div>
                 <div class="faq-item">
                     <h3>Do I need an internet connection to log workouts?</h3>
-                    <p>No. MuscleMap features robust offline queue syncing. You can log all your sets, reps, and RPEs
-                        entirely offline at the gym, and your data will securely back up to the cloud the moment you
-                        reconnect.</p>
+                    <p>No. MuscleMap includes offline queue syncing so you can log sets, reps, and 1–10 RPE at the gym and sync automatically to the cloud when you reconnect.</p>
                 </div>
             </div>
         </div>
@@ -740,20 +723,16 @@
             </div>
             <div class="footer-col">
                 <h4>About</h4>
+                <a href="#muscles">Muscles</a>
                 <a href="#features">Features</a>
-                <!-- <a href="#">Pro</a> -->
             </div>
-            <!-- <div class="footer-col">
-                <h4>Resources</h4>
-                 <a href="#">Help Center</a> 
-            </div> -->
             <div class="footer-col">
                 <h4>Download</h4>
                 <a href="https://apps.apple.com/app/id6782176731">App Store</a>
             </div>
         </div>
-        <div class="container" style="text-align: left; margin-bottom: 20px;">
-            <p style="color: #666; font-size: 0.95rem;">contact us at admin@musclemapfitness.com</p>
+        <div class="container footer-contact">
+            <p>Contact us at <a href="mailto:admin@musclemapfitness.com">admin@musclemapfitness.com</a></p>
         </div>
         <div class="container footer-bottom">
             <p>&copy; 2026 MuscleMapFitness</p>
@@ -799,30 +778,166 @@
 
         // Interactive Muscles Directory Filtering & Live Search
         (function () {
+            const STORAGE_KEY = 'musclemap_directory_state';
+            const CATEGORY_LABELS = {
+                all: 'All',
+                chest: 'Chest',
+                back: 'Back',
+                shoulders: 'Shoulders',
+                arms: 'Arms',
+                legs: 'Legs',
+                core: 'Core',
+                neck: 'Neck'
+            };
+
             const searchInput = document.getElementById('muscleSearchInput');
             const clearBtn = document.getElementById('clearSearchBtn');
-            const filterPills = document.querySelectorAll('.filter-pill');
-            const cards = document.querySelectorAll('.muscle-item-card');
+            const filterWrap = document.getElementById('musclesFilterWrap');
+            const pillsContainer = document.getElementById('musclesFilterPills');
+            const filterPills = Array.from(document.querySelectorAll('.filter-pill'));
+            const cards = Array.from(document.querySelectorAll('.muscle-item-card'));
+            const resultCountEl = document.getElementById('musclesResultCount');
             const emptyState = document.getElementById('musclesEmptyState');
-            const emptyQueryText = document.getElementById('emptyQueryText');
+            const emptyMessageEl = document.getElementById('emptyStateMessage');
+            const searchAllBtn = document.getElementById('searchAllBtn');
             const resetBtn = document.getElementById('resetFilterBtn');
 
             if (!searchInput || !cards.length) return;
 
+            const validCategories = new Set(filterPills.map(p => p.getAttribute('data-filter')));
             let currentCategory = 'all';
 
-            function filterMuscles() {
-                const query = searchInput.value.trim().toLowerCase();
-                let visibleCount = 0;
+            function saveState() {
+                try {
+                    if (currentCategory === 'all' && !searchInput.value) {
+                        sessionStorage.removeItem(STORAGE_KEY);
+                    } else {
+                        sessionStorage.setItem(STORAGE_KEY, JSON.stringify({
+                            group: currentCategory,
+                            query: searchInput.value
+                        }));
+                    }
+                } catch (e) {
+                    // Ignore storage errors in restricted browsing modes
+                }
+            }
 
-                clearBtn.style.display = query.length > 0 ? 'flex' : 'none';
+            function loadState() {
+                let nextGroup = null;
+                let nextQuery = null;
+
+                try {
+                    const params = new URLSearchParams(window.location.search);
+                    const paramGroup = params.get('group');
+                    const paramQuery = params.get('q');
+                    if (paramGroup && validCategories.has(paramGroup)) {
+                        nextGroup = paramGroup;
+                    }
+                    if (typeof paramQuery === 'string') {
+                        nextQuery = paramQuery;
+                    }
+                } catch (e) {
+                    // Ignore URL parsing errors
+                }
+
+                if (nextGroup === null && nextQuery === null) {
+                    try {
+                        const raw = sessionStorage.getItem(STORAGE_KEY);
+                        if (raw) {
+                            const parsed = JSON.parse(raw);
+                            if (parsed && typeof parsed === 'object') {
+                                if (typeof parsed.group === 'string' && validCategories.has(parsed.group)) {
+                                    nextGroup = parsed.group;
+                                }
+                                if (typeof parsed.query === 'string') {
+                                    nextQuery = parsed.query;
+                                }
+                            }
+                        }
+                    } catch (e) {
+                        // Ignore malformed or restricted sessionStorage
+                    }
+                }
+
+                if (nextGroup !== null) {
+                    currentCategory = nextGroup;
+                }
+                if (nextQuery !== null) {
+                    searchInput.value = nextQuery;
+                }
+            }
+
+            function ensurePillVisible(pill) {
+                if (!pillsContainer || !pill) return;
+                const containerWidth = pillsContainer.clientWidth;
+                if (containerWidth <= 0) return;
+                const pillLeft = pill.offsetLeft;
+                const pillRight = pillLeft + pill.offsetWidth;
+                const viewLeft = pillsContainer.scrollLeft;
+                const viewRight = viewLeft + containerWidth;
+                if (pillLeft < viewLeft + 24) {
+                    pillsContainer.scrollLeft = Math.max(0, pillLeft - 24);
+                } else if (pillRight > viewRight - 24) {
+                    pillsContainer.scrollLeft = pillRight - containerWidth + 24;
+                }
+            }
+
+            function updateFilterOverflow() {
+                if (!filterWrap || !pillsContainer) return;
+                const maxScroll = pillsContainer.scrollWidth - pillsContainer.clientWidth;
+                const canLeft = pillsContainer.scrollLeft > 2;
+                const canRight = maxScroll > 2 && pillsContainer.scrollLeft < maxScroll - 2;
+                filterWrap.classList.toggle('can-scroll-left', canLeft);
+                filterWrap.classList.toggle('can-scroll-right', canRight);
+            }
+
+            function setActiveCategory(category, options) {
+                const opts = options || {};
+                currentCategory = validCategories.has(category) ? category : 'all';
+                let activePill = null;
+
+                filterPills.forEach(p => {
+                    const isMatch = p.getAttribute('data-filter') === currentCategory;
+                    p.classList.toggle('active', isMatch);
+                    p.setAttribute('aria-selected', isMatch ? 'true' : 'false');
+                    if (isMatch) activePill = p;
+                });
+
+                if (activePill && opts.scrollPill !== false) {
+                    ensurePillVisible(activePill);
+                }
+                updateFilterOverflow();
+                filterMuscles();
+            }
+
+            function pluralizeMuscles(count) {
+                return count === 1 ? 'muscle' : 'muscles';
+            }
+
+            function pluralizeMatches(count) {
+                return count === 1 ? 'match' : 'matches';
+            }
+
+            function filterMuscles() {
+                const rawValue = searchInput.value;
+                const trimmedQuery = rawValue.trim();
+                const query = trimmedQuery.toLowerCase();
+                const totalCount = cards.length;
+                let visibleCount = 0;
+                let totalSearchMatches = 0;
+
+                clearBtn.style.display = rawValue.length > 0 ? 'flex' : 'none';
 
                 cards.forEach(card => {
-                    const cardGroup = card.getAttribute('data-group');
-                    const cardName = card.getAttribute('data-name');
+                    const cardGroup = card.getAttribute('data-group') || '';
+                    const cardName = (card.getAttribute('data-name') || '').toLowerCase();
 
-                    const matchesCategory = (currentCategory === 'all') || (cardGroup === currentCategory);
                     const matchesSearch = !query || cardName.includes(query);
+                    const matchesCategory = (currentCategory === 'all') || (cardGroup === currentCategory);
+
+                    if (matchesSearch) {
+                        totalSearchMatches++;
+                    }
 
                     if (matchesCategory && matchesSearch) {
                         card.style.display = 'flex';
@@ -832,15 +947,78 @@
                     }
                 });
 
+                const categoryLabel = CATEGORY_LABELS[currentCategory] || currentCategory;
+                let statusText = '';
+
+                if (currentCategory === 'all' && !query) {
+                    statusText = 'Showing all ' + totalCount + ' muscles';
+                } else if (currentCategory !== 'all' && !query) {
+                    statusText = 'Showing ' + visibleCount + ' ' + categoryLabel + ' ' + pluralizeMuscles(visibleCount);
+                } else if (currentCategory === 'all' && query) {
+                    statusText = visibleCount > 0
+                        ? 'Showing ' + visibleCount + ' ' + pluralizeMuscles(visibleCount) + ' matching "' + trimmedQuery + '"'
+                        : 'No muscles matching "' + trimmedQuery + '"';
+                } else if (visibleCount > 0) {
+                    statusText = 'Showing ' + visibleCount + ' ' + categoryLabel + ' ' + pluralizeMuscles(visibleCount) + ' matching "' + trimmedQuery + '"';
+                } else if (totalSearchMatches > 0) {
+                    statusText = 'No ' + categoryLabel + ' muscles match "' + trimmedQuery + '" \u2014 ' + totalSearchMatches + ' ' + pluralizeMatches(totalSearchMatches) + ' in other groups';
+                } else {
+                    statusText = 'No ' + categoryLabel + ' muscles match "' + trimmedQuery + '"';
+                }
+
+                if (resultCountEl) {
+                    resultCountEl.textContent = statusText;
+                }
+
                 if (visibleCount === 0) {
                     emptyState.style.display = 'block';
-                    emptyQueryText.textContent = query || (currentCategory !== 'all' ? currentCategory : '');
+                    const hasCrossMatches = currentCategory !== 'all' && Boolean(query) && totalSearchMatches > 0;
+                    emptyState.classList.toggle('has-cross-matches', hasCrossMatches);
+
+                    if (hasCrossMatches) {
+                        if (emptyMessageEl) {
+                            emptyMessageEl.textContent = 'No ' + categoryLabel + ' muscles match "' + trimmedQuery + '" \u2014 ' + totalSearchMatches + ' ' + pluralizeMatches(totalSearchMatches) + ' in other groups';
+                        }
+                        if (searchAllBtn) {
+                            searchAllBtn.style.display = 'inline-flex';
+                            searchAllBtn.textContent = 'Search All ' + totalCount + ' Muscles';
+                        }
+                        if (resetBtn) {
+                            resetBtn.textContent = 'Clear Search & Show All';
+                        }
+                    } else {
+                        if (emptyMessageEl) {
+                            emptyMessageEl.textContent = query
+                                ? 'No muscles found matching "' + trimmedQuery + '"'
+                                : 'No ' + categoryLabel + ' muscles found';
+                        }
+                        if (searchAllBtn) {
+                            searchAllBtn.style.display = 'none';
+                        }
+                        if (resetBtn) {
+                            resetBtn.textContent = query ? 'Clear Search & Show All' : 'Show All Muscles';
+                        }
+                    }
                 } else {
                     emptyState.style.display = 'none';
+                    emptyState.classList.remove('has-cross-matches');
+                    if (searchAllBtn) {
+                        searchAllBtn.style.display = 'none';
+                    }
                 }
+
+                saveState();
             }
 
             searchInput.addEventListener('input', filterMuscles);
+
+            searchInput.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && searchInput.value.length > 0) {
+                    e.preventDefault();
+                    searchInput.value = '';
+                    filterMuscles();
+                }
+            });
 
             clearBtn.addEventListener('click', function () {
                 searchInput.value = '';
@@ -848,29 +1026,108 @@
                 filterMuscles();
             });
 
-            filterPills.forEach(pill => {
+            filterPills.forEach((pill, index) => {
                 pill.addEventListener('click', function () {
-                    filterPills.forEach(p => {
-                        p.classList.remove('active');
-                        p.setAttribute('aria-selected', 'false');
-                    });
-                    this.classList.add('active');
-                    this.setAttribute('aria-selected', 'true');
-                    currentCategory = this.getAttribute('data-filter');
-                    filterMuscles();
+                    setActiveCategory(this.getAttribute('data-filter'));
+                });
+
+                pill.addEventListener('keydown', function (e) {
+                    let targetIndex = -1;
+                    if (e.key === 'ArrowRight') {
+                        targetIndex = (index + 1) % filterPills.length;
+                    } else if (e.key === 'ArrowLeft') {
+                        targetIndex = (index - 1 + filterPills.length) % filterPills.length;
+                    } else if (e.key === 'Home') {
+                        targetIndex = 0;
+                    } else if (e.key === 'End') {
+                        targetIndex = filterPills.length - 1;
+                    }
+                    if (targetIndex !== -1) {
+                        e.preventDefault();
+                        const nextPill = filterPills[targetIndex];
+                        nextPill.focus();
+                        setActiveCategory(nextPill.getAttribute('data-filter'));
+                    }
                 });
             });
+
+            if (searchAllBtn) {
+                searchAllBtn.addEventListener('click', function () {
+                    setActiveCategory('all');
+                });
+            }
 
             if (resetBtn) {
                 resetBtn.addEventListener('click', function () {
                     searchInput.value = '';
-                    currentCategory = 'all';
-                    filterPills.forEach(p => {
-                        const isAll = p.getAttribute('data-filter') === 'all';
-                        p.classList.toggle('active', isAll);
-                        p.setAttribute('aria-selected', isAll ? 'true' : 'false');
-                    });
-                    filterMuscles();
+                    setActiveCategory('all');
+                });
+            }
+
+            if (pillsContainer) {
+                pillsContainer.addEventListener('scroll', updateFilterOverflow, { passive: true });
+            }
+            window.addEventListener('resize', updateFilterOverflow);
+
+            function restoreAndRender() {
+                loadState();
+                setActiveCategory(currentCategory);
+            }
+
+            window.addEventListener('pageshow', function (e) {
+                if (e.persisted) {
+                    restoreAndRender();
+                }
+            });
+
+            restoreAndRender();
+        })();
+    </script>
+    <script id="mobile-nav-script">
+        (function () {
+            const navBar = document.querySelector('.nav-bar');
+            const toggle = document.querySelector('.nav-toggle');
+            const menu = document.getElementById('nav-menu');
+            if (!navBar || !toggle || !menu) return;
+
+            function setMenuOpen(isOpen, restoreFocus) {
+                navBar.classList.toggle('is-open', isOpen);
+                toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+                toggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+                if (!isOpen && restoreFocus) {
+                    toggle.focus();
+                }
+            }
+
+            toggle.addEventListener('click', function () {
+                const isOpen = !navBar.classList.contains('is-open');
+                setMenuOpen(isOpen, false);
+            });
+
+            menu.querySelectorAll('a').forEach(function (link) {
+                link.addEventListener('click', function () {
+                    setMenuOpen(false, false);
+                });
+            });
+
+            document.addEventListener('click', function (event) {
+                if (navBar.classList.contains('is-open') && !navBar.contains(event.target)) {
+                    setMenuOpen(false, false);
+                }
+            });
+
+            document.addEventListener('keydown', function (event) {
+                if (event.key === 'Escape' && navBar.classList.contains('is-open')) {
+                    setMenuOpen(false, true);
+                }
+            });
+
+            const desktopQuery = window.matchMedia('(min-width: 768px)');
+            if (desktopQuery.addEventListener) {
+                desktopQuery.addEventListener('change', function (e) {
+                    if (e.matches && navBar.classList.contains('is-open')) {
+                        setMenuOpen(false, false);
+                    }
                 });
             }
         })();
